@@ -16,18 +16,22 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>
 
-<div class="container">
-    <h1>This is the profile component</h1>
+<div class="container main-content">
 
     <div class="row">
+        <div class="col-md-12 text-center">
+            <img class="github-banner" src="../../assets/img/github_banner.png" alt="">
+            <p class="search-text">Search</p>
+        </div>
         <div class="col-md-12">
-            <form class="" action="index.html" method="post">
+            <form class="well" action="index.html" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="Enter Github Username" [(ngModel)]="username" (keyup)="searchUser()">
+                    <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
                 </div>
             </form>
         </div>
@@ -83,3 +87,8 @@
         </div>
     </div><!-- END IF USER -->
 </div>
+<footer>
+    <div class="row text-center">
+        <img class="octocat" src="../../assets/img/github_octocat.png" alt="">
+    </div>
+</footer>

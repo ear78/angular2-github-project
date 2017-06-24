@@ -4,7 +4,8 @@ import { GithubService } from '../services/github.service';
 @Component({
     moduleId: module.id,
     selector: 'profile',
-    templateUrl: './profile.template.html'
+    templateUrl: './profile.template.html',
+    styleUrls: ['./profile.css']
 })
 
 export class ProfileComponent {
@@ -13,7 +14,7 @@ export class ProfileComponent {
     username:string;
 
     constructor(private _githubService: GithubService){
-        this.user = false;        
+        this.user = false;
     }
 
     searchUser(){
