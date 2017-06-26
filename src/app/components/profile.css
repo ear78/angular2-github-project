@@ -21,6 +21,11 @@
     right: 55px;
 }
 
+footer {
+    height: 110px;
+    background: lightslategray;
+    padding-top: 20px;
+}
 .octocat {
     width: 100%;
     max-width: 60px;
